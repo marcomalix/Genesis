@@ -1,5 +1,5 @@
 
-# Steps to setup the Nvidia driver
+# Steps to setup the Nvidia driver (First method - see below the 2nd)
 # By default the intel graphic card is used, it consums less power (battery) and do the job
 
 
@@ -16,3 +16,16 @@ sudo pacman -S nvidia
 
 prime-run glxinfo | grep "OpenGL renderer"
 prime-run kdenlive # (any program you want to lunch using nvdia card, in this exemple it's kdenlive)
+
+
+
+#####################################################################################################
+
+## Second method 
+
+yay nvidia 515.48
+
+yay nvidia-settings
+
+sudo pacman -S optimus-manager-qt
+
